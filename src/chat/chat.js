@@ -29,7 +29,8 @@ function Chat({ username, roomname, socket }) {
       });
       setMessages([...temp]);
     });
-  }, [socket]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[socket]);
 
   const sendData = () => {
     if (text !== "") {
