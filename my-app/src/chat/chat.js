@@ -15,8 +15,9 @@ function Chat({ username, roomname, socket }) {
   };
 
   useEffect(() => {
-    socket.on("message", (data) => {
+    socket.on("chat", (data) => {
       //decypt the message
+      console.log(data);
       const ans = to_Decrypt(data.text, data.username);
       dispatchProcess(false, ans, data.text);
       console.log(ans);
@@ -34,7 +35,7 @@ function Chat({ username, roomname, socket }) {
     if (text !== "") {
       //encrypt the message here
       const ans = to_Encrypt(text);
-      socket.emit("chat", ans);
+      socket.emit("chat", {text:ans, username});
       setText("");
     }
   };
