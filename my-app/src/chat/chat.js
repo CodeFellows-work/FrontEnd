@@ -53,7 +53,7 @@ function Chat({ username, roomname, socket }) {
     <div className="chat">
       <div className="user-name">
         <h2>
-          {username} <span style={{ fontSize: "0.7rem" }}>in {roomname}</span>
+          {username} <span style={{ fontSize: "0.7rem" }}>in room {roomname}</span>
         </h2>
       </div>
       <div className="chat-message">
@@ -78,7 +78,7 @@ function Chat({ username, roomname, socket }) {
       </div>
       <div className="send">
         <input
-          placeholder="enter your message"
+          placeholder="Message"
           value={text}
           onChange={(e) => setText(e.target.value)}
           onKeyPress={(e) => {

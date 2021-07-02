@@ -2,7 +2,9 @@
     width: 500px;
     height: 500px;
     padding: 2rem;
-    background-color: #2d343e;
+    background: url(https://c4.wallpaperflare.com/wallpaper/502/259/582/feelsbadman-pepe-meme-memes-wallpaper-preview.jpg);
+    background-position: center;
+    background-size: 180%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -23,10 +25,10 @@
       padding: 0.5rem 1rem 0.5rem 1rem;
       width: 100px;
       border: none;
-      background-color: #ffac41;
+      background: url(https://media2.giphy.com/media/fXFMtvW5L6bYI/200w.gif);
       border-radius: 5px;
   
-      color: black;
+      color: white;
       &:hover {
         cursor: pointer;
       }

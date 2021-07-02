@@ -19,14 +19,14 @@ function Homepage({ socket }) {
 
 return (
     <div className="homepage">
-    <h1>Welcome to ChatApp</h1>
+    <h1>Chat Hard With Your Friends</h1>
     <input
         placeholder="Input your user name" value={username} onChange={(e) => setusername(e.target.value)}
     ></input>
     <input
         placeholder="Input the room name" value={roomname} onChange={(e) => setroomname(e.target.value)}
     ></input>
-    <Link to={`/chat/${roomname}/${username}}`}>
+    <Link to={`/chat/${roomname}/${username}`}>
         <button onClick={sendData}>Join</button>
     </Link>
     </div>

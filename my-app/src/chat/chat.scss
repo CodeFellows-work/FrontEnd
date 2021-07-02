@@ -1,4 +1,5 @@
 @import "../globals";
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap');
 @mixin scrollbars(
   $size,
   $foreground-color,
@@ -33,13 +34,14 @@
   justify-content: space-between;
   height: 600px;
   flex-direction: column;
-  background-color: $greyColor;
+  background-color: rgb(32, 32, 32);
   .user-name {
     width: 100%;
     text-align: start;
     h2 {
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       font-weight: 300;
+      font-family: 'Tourney', cursive;
       padding-bottom: 1rem;
     }
   }
@@ -60,7 +62,7 @@
         color: #b4b6be;
         font-size: 1rem;
         font-weight: 300;
-        background-color: #250202;
+        background-color: rgba(0, 89, 255, 0.884);
         border-radius: 0px 10px 10px 10px;
         padding: 1rem;
       }
@@ -80,7 +82,7 @@
       margin-right: 0px;
       max-width: 220px;
       p {
-        background-color: $redColor;
+        background-color: gray;
         text-align: end;
         color: white;
         border-radius: 10px 0px 10px 10px;
@@ -99,7 +101,7 @@
     display: flex;
     width: 100%;
     input {
-      background-color: #404450;
+      background-color: #3a3a3d;
       width: 80%;
       padding-left: 1rem;
       text-decoration: none;
@@ -110,7 +112,7 @@
       }
     }
     button {
-      background-color: $yellowColor;
+      background-color: gray;
       width: 20%;
       border-radius: 0px 5px 5px 0px;
       border: none;
