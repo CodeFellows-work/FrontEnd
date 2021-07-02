@@ -1,4 +1,4 @@
-import Chat from "./chat/chat";
+import Chat from "./chat/chat.js";
 import Process from "./process/process";
 import Home from "./home/home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -6,7 +6,7 @@ import "./App.scss";
 import React from 'react';
 import io from "socket.io-client";
 
-const socket = io.connect('http://localhost:3000/chat')
+const socket = io.connect('https://serverlab.herokuapp.com/chat')
 
 
 function Appmain(props) {
