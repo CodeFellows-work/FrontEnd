@@ -8,6 +8,7 @@ function Homepage({ socket }) {
   //activates joinRoom function defined on the backend 
     const sendData = () => {
         if (username !== "" && roomname !== "") {
+            console.log(username, roomname);
             socket.emit("joinRoom", { username, roomname });
       //if empty error message pops up and returns to the same page
             }else {
@@ -25,7 +26,7 @@ return (
     <input
         placeholder="Input the room name" value={roomname} onChange={(e) => setroomname(e.target.value)}
     ></input>
-    <Link to={`/chat/${roomname}/${username}`}>
+    <Link to={`/chat/${roomname}/${username}}`}>
         <button onClick={sendData}>Join</button>
     </Link>
     </div>
