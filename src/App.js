@@ -6,7 +6,7 @@ import "./App.scss";
 import React from 'react';
 import io from "socket.io-client";
 
-const socket = io.connect('http://localhost:3000/chat')
+const socket = io.connect('https://serverlab.herokuapp.com/chat')
 
 
 function Appmain(props) {
